@@ -241,7 +241,7 @@ export function Sidebar() {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
               <ul className="flex flex-col gap-4">
-                {console.log(filteredItems)}
+                
                 {filteredItems.map((category, index) => (
                   <div key={index}>
                     <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">
@@ -267,7 +267,7 @@ export function Sidebar() {
             </div>
           </DrawerContent>
         </Drawer>
-        {/* Always rendered */}
+     
 
       </div>
     </div>

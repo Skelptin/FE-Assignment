@@ -101,7 +101,7 @@ const Navbar = () => {
                 ))}
             </ul>
             <div className="lg:hidden">
-                {/* Button to trigger the Drawer */}
+            
                 <Drawer direction="right">
                     <DrawerTrigger asChild>
                         <Button variant="outline">
@@ -119,7 +119,7 @@ const Navbar = () => {
                         </Button>
                     </DrawerTrigger>
                     <DrawerContent className="absolute bg-slate-200 right-0 top-0 h-full w-full">
-                        {/* Content of the Drawer */}
+                    
                         <div className="p-4 h-full flex flex-col justify-between">
                             <div>
                                 <ul className="flex flex-col gap-4">
