@@ -217,7 +217,7 @@ export function Sidebar() {
         >
           <DrawerTrigger asChild>
             <Button
-              className="mt-5 bottom-4 flex right-4 rounded-full bg-white text-black p-3 z-50"
+              className="mt-6 bottom-4 flex right-4 rounded-full bg-white text-black p-3 z-50"
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
             >
               {isDrawerOpen ? (
@@ -231,7 +231,7 @@ export function Sidebar() {
               )}
             </Button>
           </DrawerTrigger>
-          <DrawerContent>
+          <DrawerContent className='bg-green-400'>
             <DrawerClose onClick={() => setIsDrawerOpen(false)} />
             <div className="p-4">
               <Input

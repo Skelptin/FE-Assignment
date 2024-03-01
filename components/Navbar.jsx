@@ -2,7 +2,9 @@ import React from 'react';
 import Logo from '@/public/logos.svg';
 import { Button } from "@/components/ui/button"
 import Link from 'next/link';
+import { Sidebar } from './Sidebar';
 import { Input } from "@/components/ui/input"
+import './Form.css'
 
 import {
     Drawer,
@@ -25,7 +27,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="flex justify-around items-center p-5 shadow-2xl">
+        <nav className="flex justify-between lg:justify-around nav items-center p-5 shadow-2xl">
             <div className="logo ">
                 <Link href={'/'}>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +84,7 @@ const Navbar = () => {
                     </svg>
                 </Link>
             </div>
-            <div className='sm:visible max-lg:hidden'>
+            <div className='sm:visible  md:visible max-lg:hidden'>
                 <Input
                     className="rounded-3xl w-3/4 mx-auto item-center border-white"
                     placeholder="Search"
@@ -116,7 +118,7 @@ const Navbar = () => {
                             </svg>
                         </Button>
                     </DrawerTrigger>
-                    <DrawerContent className="absolute right-0 top-0 h-full w-full">
+                    <DrawerContent className="absolute bg-green-400 right-0 top-0 h-full w-full">
                         {/* Content of the Drawer */}
                         <div className="p-4 h-full flex flex-col justify-between">
                             <div>
