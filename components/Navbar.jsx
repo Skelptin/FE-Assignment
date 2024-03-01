@@ -118,7 +118,7 @@ const Navbar = () => {
                             </svg>
                         </Button>
                     </DrawerTrigger>
-                    <DrawerContent className="absolute bg-green-400 right-0 top-0 h-full w-full">
+                    <DrawerContent className="absolute bg-slate-200 right-0 top-0 h-full w-full">
                         {/* Content of the Drawer */}
                         <div className="p-4 h-full flex flex-col justify-between">
                             <div>
